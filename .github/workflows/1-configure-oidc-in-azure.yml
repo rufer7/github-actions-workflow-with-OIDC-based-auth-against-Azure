@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   on_create_a_branch:
-    name: On create a branch
+    name: On create a branch after configuring OIDC in Azure
 
     # We will only run this action when:
     # 1. This repository isn't the template repository
