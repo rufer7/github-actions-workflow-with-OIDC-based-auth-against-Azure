@@ -7,9 +7,9 @@
   Add your open source license, GitHub uses Creative Commons Attribution 4.0 International.
 -->
 
-# GITHUB ACTIONS WORKFLOW WITH OIDC BASED AUTHENTICATION WITH AZURE
+# GitHub actions workflow with OIDC based authentication against Azure
 
-_In this course you learn how to create a workflow that uses GitHub Actions OIDC provider for authentication against Azure._
+_Create a workflow that uses GitHub Actions OIDC provider for authentication against Azure_
 
 <!--
   <<< Author notes: Start of the course >>>
@@ -22,13 +22,13 @@ _In this course you learn how to create a workflow that uses GitHub Actions OIDC
 
 <!--step0
 
-TBD-welcome-paragraph
+GitHub Actions workflows often need to access a cloud provider like AWS, Azure, GCP, ... for example for resource creation or for software deployment. Therefore usually long living secrets are used and stored as secrets in GitHub. GitHub Actions OpenID Connect (OIDC) provider allows you to configure your workflow to request a short-lived access token directly from the cloud provider. By updating your workflows to use OIDC tokens, you can adopt good security practices like no cloud secrets, authentication and authorization management as well as rotating credentials.
 
-- **Who is this for**: TBD-audience.
-- **What you'll learn**: TBD-objective.
-- **What you'll build**: TBD-result.
-- **Prerequisites**: TBD-prerequisites.
-- **How long**: This course is TBD-step-count steps long and takes less than TBD-duration to complete.
+- **Who is this for**: Developers and DevOps engineers
+- **What you'll learn**: Best practice authentication for workflows against Azure 
+- **What you'll build**: A workflow that uses GitHub Actions OIDC provider for authentication against Azure
+- **Prerequisites**: Azure tenant with a subscription
+- **How long**: This course is 4 steps long and takes less than 30 minutes to complete.
 
 ## How to start this course
 
@@ -52,18 +52,23 @@ endstep0-->
 -->
 
 <details id=1 open>
-<summary><h2>Step 1: TBD-step-1-name</h2></summary>
+<summary><h2>Step 1: Configure OIDC in Azure</h2></summary>
 
-_Welcome to "TBD-course-name"! :wave:_
+_Welcome to "GitHub actions workflow with OIDC based authentication against Azure"! :wave:_
 
-TBD-step-1-information
+In this step you'll configure OIDC in your Azure tenant.
 
-**What is _TBD-term-1_**: TBD-definition-1
+**What is _Azure_**: Azure is the cloud platform of Microsoft.
+**What is a _tenant_**: An Azure AD tenant is a reserved Azure AD service instance that an organization receives and owns once it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Microsoft 365.
+**What is _OIDC_**: OpenID Connect or OIDC is an identity protocol that utilizes the authorization and authentication mechanisms of OAuth 2.0.
 
-### :keyboard: Activity: TBD-step-1-name
+### :keyboard: Activity: Add the Federated Credentials to Azure
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. TBD-step-1-instructions.
+1. [Create an Azure Active Directory application and service principal](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-an-azure-active-directory-application-and-service-principal) by following the steps under the link
+1. [Add federated credentials](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#add-federated-credentials) by following the steps under the link
+1. [Create GitHub secrets](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-github-secrets) by following the steps under the link
+1. Create a new branch with name `feature/deploy-resource-group-with-terraform`
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
