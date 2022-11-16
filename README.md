@@ -7,9 +7,9 @@
   Add your open source license, GitHub uses Creative Commons Attribution 4.0 International.
 -->
 
-# TBD-course-name
+# GITHUB ACTIONS WORKFLOW WITH OIDC BASED AUTHENTICATION WITH AZURE
 
-_TBD-course-description_
+_In this course you learn how to create a workflow that uses GitHub Actions OIDC provider for authentication against Azure._
 
 <!--
   <<< Author notes: Start of the course >>>
