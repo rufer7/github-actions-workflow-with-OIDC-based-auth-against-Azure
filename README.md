@@ -72,7 +72,7 @@ In this step you'll configure OIDC in your Azure tenant.
 1. [Create an Azure Active Directory application and service principal](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-an-azure-active-directory-application-and-service-principal) by following the steps under the link
 1. [Add federated credentials](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#add-federated-credentials) by following the steps under the link
 1. [Create GitHub secrets](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-github-secrets) by following the steps under the link
-1. If you are done, create a new branch with name `deploy-resource-group-with-terraform`
+1. If you are done, create a new branch with name `deploy-resource-group`
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
@@ -96,17 +96,39 @@ Configuring OIDC in Azure allows you to authenticate in a GitHub Actions workflo
 
 The following steps will guide you through the process of creating a GitHub Actions workflow.
 
-1. On the **Code** tab, make sure you're on your new branch `deploy-resource-group-with-terraform`.
+1. On the **Code** tab, make sure you're on your new branch `deploy-resource-group`.
 1. Click on tab `Actions`
 1. Click on button `new workflow`
 1. Choose `Simple workflow` and click `Configure`
 1. Rename file to `my-first-workflow`
 1. Replace content of `.yml` file with the following content
-  
-  ```yml
-  TODO: CONTENT HERE
-  ```
+```yml
+name: Run Azure Login with OpenID Connect and PowerShell
+on: [push]
 
+permissions:
+      id-token: write
+      contents: read
+      
+jobs: 
+  Windows-latest:
+      runs-on: windows-latest
+      steps:
+        - name: OIDC Login to Azure Public Cloud with AzPowershell (enableAzPSSession true)
+          uses: azure/login@v1
+          with:
+            client-id: ${{ secrets.AZURE_CLIENT_ID }}
+            tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+            subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} 
+            enable-AzPSSession: true
+
+        - name: 'Create resource group with PowerShell action'
+          uses: azure/powershell@v1
+          with:
+             inlineScript: |
+               New-AzResourceGroup -Name MyFirstResourceGroup -Location "South Central US"
+             azPSVersion: "latest"
+```
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
