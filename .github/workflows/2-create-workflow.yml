@@ -1,6 +1,6 @@
 name: Step 2, Create workflow
 
-# This step listens for the learner to commit a file .github/workflows/my-first-workflow to branch `deploy-resource-group-with-terraform`
+# This step listens for the learner to commit a file .github/workflows/my-first-workflow to branch `deploy-resource-group`
 # This step sets STEP to X
 # This step closes <details id=2> and opens <details id=X>
 
@@ -46,4 +46,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           from_step: 2
           to_step: X
-          branch_name: deploy-resource-group-with-terraform
+          branch_name: deploy-resource-group
