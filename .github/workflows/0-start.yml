@@ -38,8 +38,6 @@ jobs:
         with:
           fetch-depth: 0 # Let's get all the branches
 
-      # TBD-course-set-up
-
       # Update README to close <details id=0> and open <details id=1>
       # and set STEP to '1'
       - name: Update to step 1
@@ -48,4 +46,3 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           from_step: 0
           to_step: 1
-          branch_name: tbd-branch-name
