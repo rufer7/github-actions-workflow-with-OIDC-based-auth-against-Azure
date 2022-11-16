@@ -1,14 +1,14 @@
-name: Step 2, TBD-step-2-name
+name: Step 2, Create workflow
 
-# This step triggers after TBD-step-2-event-desc
-# This step sets STEP to 3
-# This step closes <details id=2> and opens <details id=3>
+# This step listens for the learner to commit a file .github/workflows/my-first-workflow to branch `deploy-resource-group-with-terraform`
+# This step sets STEP to X
+# This step closes <details id=2> and opens <details id=X>
 
-# This will run every time we TBD-step-2-event-desc
+# This will run every time we create a workflow with name `my-first-workflow`
 # Reference https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
-  TBD-step-2-event:
+  create:
 
 # Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
@@ -17,8 +17,8 @@ permissions:
   contents: write
 
 jobs:
-  on_TBD-step-2-event:
-    name: On TBD-step-2-event
+  on_create_workflow:
+    name: On Create workflow
 
     # We will only run this action when:
     # 1. This repository isn't the template repository
@@ -38,12 +38,12 @@ jobs:
 
       # TBD-step-2-additional-steps
 
-      # Update README to close <details id=2> and open <details id=3>
+      # Update README to close <details id=2> and open <details id=X>
       # and set STEP to '3'
-      - name: Update to step 3
+      - name: Update to step X
         uses: skills/action-update-step@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           from_step: 2
-          to_step: 3
-          branch_name: tbd-branch-name
+          to_step: X
+          branch_name: deploy-resource-group-with-terraform
