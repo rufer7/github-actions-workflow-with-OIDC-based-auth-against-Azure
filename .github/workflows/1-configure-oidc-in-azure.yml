@@ -1,10 +1,10 @@
 name: Step 1, Configure OIDC in Azure
 
-# This step listens for the learner to create branch `deploy-resource-group-with-terraform`
+# This step listens for the learner to create branch `deploy-resource-group`
 # This step sets STEP to 2
 # This step closes <details id=1> and opens <details id=2>
 
-# This will run every time we create branch deploy-resource-group-with-terraform
+# This will run every time we create branch deploy-resource-group
 # Reference https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
@@ -23,10 +23,10 @@ jobs:
     # We will only run this action when:
     # 1. This repository isn't the template repository
     # 2. The event is a branch
-    # 3. The branch name is `deploy-resource-group-with-terraform`
+    # 3. The branch name is `deploy-resource-group`
     # Reference https://docs.github.com/en/actions/learn-github-actions/contexts
     # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
-    if: ${{ !github.event.repository.is_template && github.ref_type == 'branch' && github.ref_name == 'deploy-resource-group-with-terraform' }}
+    if: ${{ !github.event.repository.is_template && github.ref_type == 'branch' && github.ref_name == 'deploy-resource-group' }}
 
     # We'll run Ubuntu for performance instead of Mac or Windows
     runs-on: ubuntu-latest
@@ -46,4 +46,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           from_step: 1
           to_step: 2
-          branch_name: deploy-resource-group-with-terraform
+          branch_name: deploy-resource-group
