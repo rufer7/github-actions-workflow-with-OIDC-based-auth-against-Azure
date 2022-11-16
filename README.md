@@ -28,7 +28,7 @@ GitHub Actions workflows often need to access a cloud provider like AWS, Azure, 
 - **What you'll learn**: Best practice authentication for workflows against Azure 
 - **What you'll build**: A workflow that uses GitHub Actions OIDC provider for authentication against Azure
 - **Prerequisites**: Azure tenant with a subscription
-- **How long**: This course is 4 steps long and takes less than 30 minutes to complete.
+- **How long**: This course is 2 steps long and takes less than 15 minutes to complete.
 
 ## How to start this course
 
@@ -59,10 +59,14 @@ _Welcome to "GitHub Actions workflow with OIDC based authentication against Azur
 In this step you'll configure OIDC in your Azure tenant.
 
 **What is _Azure_**: Azure is the cloud platform of Microsoft.
+
 **What is a _tenant_**: An Azure AD tenant is a reserved Azure AD service instance that an organization receives and owns once it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Microsoft 365.
+
 **What is _OIDC_**: OpenID Connect or OIDC is an identity protocol that utilizes the authorization and authentication mechanisms of OAuth 2.0.
 
-### :keyboard: Activity: Add the Federated Credentials to Azure
+**What is a branch?**: A [branch](https://docs.github.com/en/get-started/quickstart/github-glossary#branch) is a parallel version of your repository. By default, your repository has one branch named `main` and it is considered to be the definitive branch. You can create additional branches off of `main` in your repository. You can use branches to have different versions of a project at one time.
+
+### :keyboard: Activity: Configure OIDC in Azure
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
 1. [Create an Azure Active Directory application and service principal](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-an-azure-active-directory-application-and-service-principal) by following the steps under the link
@@ -80,85 +84,29 @@ In this step you'll configure OIDC in your Azure tenant.
 -->
 
 <details id=2>
-<summary><h2>Step 2: Create terraform file</h2></summary>
+<summary><h2>Step 2: Create workflow</h2></summary>
 
-_You did configure OIDC in Azure! :tada:_
+_You did configure OIDC in Azure and created a branch! :tada:_
 
-TBD-step-2-information
+Configuring OIDC in Azure allows you to authenticate in a GitHub Actions workflow without the need of storing an access token in GitHub!
 
-**What is _TBD-term-2_**: TBD-definition-2
+**What is a _workflow_**: A workflow is a configurable automated process that will run one or more jobs. Workflows are defined by a YAML file checked in to your repository and will run when triggered by an event in your repository, or they can be triggered manually, or at a defined schedule.
 
-### :keyboard: Activity: TBD-step-2-name
+### :keyboard: Activity: Create workflow
 
-1. TBD-step-2-instructions.
-1. Wait about 20 seconds then refresh this page for the next step.
+The following steps will guide you through the process of creating a GitHub Actions workflow.
 
-</details>
+1. On the **Code** tab, make sure you're on your new branch `deploy-resource-group-with-terraform`.
+1. Click on tab `Actions`
+1. Click on button `new workflow`
+1. Choose `Simple workflow` and click `Configure`
+1. Rename file to `my-first-workflow`
+1. Replace content of `.yml` file with the following content
+  
+  ```yml
+  TODO: CONTENT HERE
+  ```
 
-<!--
-  <<< Author notes: Step 3 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
-  TBD-step-3-notes.
--->
-
-<details id=3>
-<summary><h2>Step 3: TBD-step-3-name</h2></summary>
-
-_Nice work finishing TBD-step-2-name :sparkles:_
-
-TBD-step-3-information
-
-**What is _TBD-term-3_**: TBD-definition-3
-
-### :keyboard: Activity: TBD-step-3-name
-
-1. TBD-step-3-instructions.
-1. Wait about 20 seconds then refresh this page for the next step.
-
-</details>
-
-<!--
-  <<< Author notes: Step 4 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
-  TBD-step-4-notes.
--->
-
-<details id=4>
-<summary><h2>Step 4: TBD-step-4-name</h2></summary>
-
-_Nicely done TBD-step-3-name! :partying_face:_
-
-TBD-step-4-information
-
-**What is _TBD-term-4_**: TBD-definition-4
-
-### :keyboard: Activity: TBD-step-4-name
-
-1. TBD-step-4-instructions.
-1. Wait about 20 seconds then refresh this page for the next step.
-
-</details>
-
-<!--
-  <<< Author notes: Step 5 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
-  TBD-step-5-notes.
--->
-
-<details id=5>
-<summary><h2>Step 5: Merge your pull request</h2></summary>
-
-_Almost there TBD-step-4-name! :heart:_
-
-You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your pull request!
-
-### :keyboard: Activity: Merge your pull request
-
-1. Click **Merge pull request**.
-1. Delete the branch `TBD-branch-name` (optional).
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
@@ -175,16 +123,19 @@ _Congratulations friend, you've completed this course!_
 
 <img src=TBD-celebrate-image alt=celebrate width=300 align=right>
 
-Here's a recap of all the tasks you've accomplished in your repository:
+Here's a recap of all the tasks you've accomplished in this course:
 
-- TBD-recap.
+- You configured OIDC in Azure by adding the Federated Credentials to Azure
+- You created your first GitHub Actions workflow that uses GitHub Actions OIDC provider for authentication against Azure
+- The execution of this workflow create a resource group in your Azure tenant by using best practice authentication
 
 ### What's next?
 
-- TBD-continue.
-- [We'd love to hear what you thought of this course](TBD-feedback-link).
-- [Take another TBD-organization Course](https://github.com/TBD-organization).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
+- [I'd love to hear what you thought of this course](mailto:m.rufer@gmx.ch).
+- [Check out using environments for deployment](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment).
+- [Check out reusable workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows).
+- [Check out Assigning permissions to jobs](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs).
+- [Check out Assigning permissions to jobs](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs).
 - To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
 
 </details>
