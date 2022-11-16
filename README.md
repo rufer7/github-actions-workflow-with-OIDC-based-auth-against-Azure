@@ -121,7 +121,7 @@ The following steps will guide you through the process of creating a GitHub Acti
 
 _Congratulations friend, you've completed this course!_
 
-<img src=TBD-celebrate-image alt=celebrate width=300 align=right>
+<img src=https://github.com/rufer7/github-actions-workflow-with-OIDC-based-auth-with-Azure/blob/main/fireworks.jpg alt=celebrate width=300 align=right>
 
 Here's a recap of all the tasks you've accomplished in this course:
 
