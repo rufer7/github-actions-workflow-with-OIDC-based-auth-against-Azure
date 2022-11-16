@@ -68,12 +68,15 @@ In this step you'll configure OIDC in your Azure tenant.
 
 ### :keyboard: Activity: Configure OIDC in Azure
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
+1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab
 1. [Create an Azure Active Directory application and service principal](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-an-azure-active-directory-application-and-service-principal) by following the steps under the link
+  - Assign a role `Contributor` to the application
 1. [Add federated credentials](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#add-federated-credentials) by following the steps under the link
+  - `Entity type`: `Branch`
+  - GitHub branch name: `deploy-resource-group`
 1. [Create GitHub secrets](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-github-secrets) by following the steps under the link
 1. If you are done, create a new branch with name `deploy-resource-group`
-1. Wait about 20 seconds then refresh this page for the next step.
+1. Wait about 20 seconds then refresh this page for the next step
 
 </details>
 
@@ -96,11 +99,14 @@ Configuring OIDC in Azure allows you to authenticate in a GitHub Actions workflo
 
 The following steps will guide you through the process of creating a GitHub Actions workflow.
 
-1. On the **Code** tab, make sure you're on your new branch `deploy-resource-group`.
+1. On the **Code** tab, make sure you're on your new branch `deploy-resource-group`
+1. Click on tab `Settiings`
+1. Click on `Branches`
+1. Switch default branch to `deploy-resource-group` (click on button <--> to switch default branch)
 1. Click on tab `Actions`
 1. Click on button `new workflow`
 1. Choose `Simple workflow` and click `Configure`
-1. Rename file to `my-first-workflow`
+1. Rename file to `my-first-workflow.yml`
 1. Replace content of `.yml` file with the following content
 ```yml
 name: Run Azure Login with OpenID Connect and PowerShell
@@ -129,7 +135,7 @@ jobs:
                New-AzResourceGroup -Name MyFirstResourceGroup -Location "South Central US"
              azPSVersion: "latest"
 ```
-1. Wait about 20 seconds then refresh this page for the next step.
+1. Wait about 20 seconds then refresh this page for the next step
 
 </details>
 
@@ -153,12 +159,11 @@ Here's a recap of all the tasks you've accomplished in this course:
 
 ### What's next?
 
-- [I'd love to hear what you thought of this course](mailto:m.rufer@gmx.ch).
-- [Check out using environments for deployment](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment).
-- [Check out reusable workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows).
-- [Check out Assigning permissions to jobs](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs).
-- [Check out Assigning permissions to jobs](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
+- [I'd love to hear what you thought of this course](mailto:m.rufer@gmx.ch)
+- [Check out using environments for deployment](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment)
+- [Check out reusable workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows)
+- [Check out Assigning permissions to jobs](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs)
+- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore)
 
 </details>
 
