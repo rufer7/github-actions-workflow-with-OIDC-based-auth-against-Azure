@@ -7,7 +7,7 @@
   Add your open source license, GitHub uses Creative Commons Attribution 4.0 International.
 -->
 
-# GitHub actions workflow with OIDC based authentication against Azure
+# GitHub Actions workflow with OIDC based authentication against Azure
 
 _Create a workflow that uses GitHub Actions OIDC provider for authentication against Azure_
 
@@ -54,7 +54,7 @@ endstep0-->
 <details id=1 open>
 <summary><h2>Step 1: Configure OIDC in Azure</h2></summary>
 
-_Welcome to "GitHub actions workflow with OIDC based authentication against Azure"! :wave:_
+_Welcome to "GitHub Actions workflow with OIDC based authentication against Azure"! :wave:_
 
 In this step you'll configure OIDC in your Azure tenant.
 
