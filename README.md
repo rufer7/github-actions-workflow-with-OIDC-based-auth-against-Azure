@@ -68,22 +68,21 @@ In this step you'll configure OIDC in your Azure tenant.
 1. [Create an Azure Active Directory application and service principal](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-an-azure-active-directory-application-and-service-principal) by following the steps under the link
 1. [Add federated credentials](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#add-federated-credentials) by following the steps under the link
 1. [Create GitHub secrets](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-github-secrets) by following the steps under the link
-1. Create a new branch with name `deploy-resource-group-with-terraform`
+1. If you are done, create a new branch with name `deploy-resource-group-with-terraform`
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
 
-<!--
+<!-- 
   <<< Author notes: Step 2 >>>
   Start this step by acknowledging the previous step.
   Define terms and link to docs.github.com.
-  TBD-step-2-notes.
 -->
 
 <details id=2>
-<summary><h2>Step 2: TBD-step-2-name</h2></summary>
+<summary><h2>Step 2: Create terraform file</h2></summary>
 
-_You did TBD-step-1-name! :tada:_
+_You did configure OIDC in Azure! :tada:_
 
 TBD-step-2-information
 
