@@ -20,7 +20,7 @@ _Create a workflow that uses GitHub Actions OIDC provider for authentication aga
   Do not use quotes on the <details> tag attributes.
 -->
 
-<!--step0
+<!--step0-->
 
 GitHub Actions workflows often need to access a cloud provider like AWS, Azure, GCP, ... for example for resource creation or for software deployment. Therefore usually long living secrets are used and stored as secrets in GitHub. GitHub Actions OpenID Connect (OIDC) provider allows you to configure your workflow to request a short-lived access token directly from the cloud provider. By updating your workflows to use OIDC tokens, you can adopt good security practices like no cloud secrets, authentication and authorization management as well as rotating credentials.
 
@@ -40,7 +40,7 @@ GitHub Actions workflows often need to access a cloud provider like AWS, Azure, 
    ![Create a new repository](https://user-images.githubusercontent.com/1221423/169618722-406dc508-add4-4074-83f0-c7a7ad87f6f3.png)
 3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
 
-endstep0-->
+<!--endstep0-->
 
 <!--
   <<< Author notes: Step 1 >>>
