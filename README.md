@@ -135,7 +135,8 @@ jobs:
                New-AzResourceGroup -Name MyFirstResourceGroup -Location "South Central US"
              azPSVersion: "latest"
 ```
-10. Wait about 20 seconds then refresh this page for the next step
+10. Commit changes
+11. Wait about 20 seconds then refresh this page for the next step
 
 </details>
 
