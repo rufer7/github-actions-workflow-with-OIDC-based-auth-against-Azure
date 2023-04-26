@@ -70,10 +70,10 @@ In this step you'll configure OIDC in your Azure tenant.
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab
 1. [Create an Azure Active Directory application and service principal](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-an-azure-active-directory-application-and-service-principal) by following the steps under the link
-  - Assign a role `Contributor` to the application
+    - Assign a role `Contributor` to the application
 1. [Add federated credentials](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#add-federated-credentials) by following the steps under the link
-  - `Entity type`: `Branch`
-  - GitHub branch name: `deploy-resource-group`
+    - `Entity type`: `Branch`
+    - GitHub branch name: `deploy-resource-group`
 1. [Create GitHub secrets](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-github-secrets) by following the steps under the link
 1. If you are done, create a new branch with name `deploy-resource-group`
 1. Wait about 20 seconds then refresh this page for the next step
@@ -100,7 +100,7 @@ Configuring OIDC in Azure allows you to authenticate in a GitHub Actions workflo
 The following steps will guide you through the process of creating a GitHub Actions workflow.
 
 1. On the **Code** tab, make sure you're on your new branch `deploy-resource-group`
-1. Click on tab `Settiings`
+1. Click on tab `Settings`
 1. Click on `Branches`
 1. Switch default branch to `deploy-resource-group` (click on button <--> to switch default branch)
 1. Click on tab `Actions`
@@ -135,7 +135,7 @@ jobs:
                New-AzResourceGroup -Name MyFirstResourceGroup -Location "South Central US"
              azPSVersion: "latest"
 ```
-1. Wait about 20 seconds then refresh this page for the next step
+10. Wait about 20 seconds then refresh this page for the next step
 
 </details>
 
@@ -176,4 +176,4 @@ Here's a recap of all the tasks you've accomplished in this course:
 
 Get help: [About security hardening with OpenID Connect]([TBD-support-link](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect)) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
 
-&copy; 2022 Marc Rufer &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [License](https://github.com/rufer7/github-actions-workflow-with-OIDC-based-auth-with-Azure/blob/main/LICENSE)
+&copy; 2023 Marc Rufer &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [License](https://github.com/rufer7/github-actions-workflow-with-OIDC-based-auth-with-Azure/blob/main/LICENSE)
