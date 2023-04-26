@@ -70,7 +70,7 @@ In this step you'll configure OIDC in your Azure tenant.
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab
 1. [Create an Azure Active Directory application and service principal](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-an-azure-active-directory-application-and-service-principal) by following the steps under the link
-    - Assign a role `Contributor` to the application
+    - Assign role `Contributor` on subscription to the application
 1. [Add federated credentials](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#add-federated-credentials) by following the steps under the link
     - `Entity type`: `Branch`
     - GitHub branch name: `deploy-resource-group`
