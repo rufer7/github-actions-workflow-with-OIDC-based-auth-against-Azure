@@ -32,7 +32,7 @@ GitHub Actions workflows often need to access a cloud provider like AWS, Azure, 
 
 ## How to start this course
 
-1. Above these instructions, right-click **Use this template** and open the link in a new tab.
+1. Above these instructions, click **Use this template** and click **Create a new repository**.
    ![Use this template](https://user-images.githubusercontent.com/1221423/169618716-fb17528d-f332-4fc5-a11a-eaa23562665e.png)
 2. In the new tab, follow the prompts to create a new repository.
    - For owner, choose your personal account or an organization to host the repository.
