@@ -101,8 +101,7 @@ The following steps will guide you through the process of creating a GitHub Acti
 
 1. On the **Code** tab, make sure you're on your new branch `deploy-resource-group`
 1. Click on tab `Settings`
-1. Click on `Branches`
-1. Switch default branch to `deploy-resource-group` (click on button <--> to switch default branch)
+1. In section `Default branch` switch the default branch to `deploy-resource-group` (click on button <--> to switch default branch)
 1. Click on tab `Actions`
 1. Click on button `new workflow`
 1. Choose `Simple workflow` and click `Configure`
