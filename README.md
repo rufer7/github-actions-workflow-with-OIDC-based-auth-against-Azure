@@ -176,4 +176,4 @@ Here's a recap of all the tasks you've accomplished in this course:
 
 Get help: [About security hardening with OpenID Connect]([TBD-support-link](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect)) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
 
-&copy; 2023 Marc Rufer &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [License](https://github.com/rufer7/github-actions-workflow-with-OIDC-based-auth-with-Azure/blob/main/LICENSE)
+&copy; 2024 Marc Rufer &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [License](https://github.com/rufer7/github-actions-workflow-with-OIDC-based-auth-with-Azure/blob/main/LICENSE)
