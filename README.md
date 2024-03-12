@@ -60,7 +60,7 @@ In this step you'll configure OIDC in your Azure tenant.
 
 **What is _Azure_**: Azure is the cloud platform of Microsoft.
 
-**What is a _tenant_**: An Azure AD tenant is a reserved Azure AD service instance that an organization receives and owns once it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Microsoft 365.
+**What is a _tenant_**: A Microsoft Entra ID tenant is a reserved Microsoft Entra ID service instance that an organization receives and owns once it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Microsoft 365.
 
 **What is _OIDC_**: OpenID Connect or OIDC is an identity protocol that utilizes the authorization and authentication mechanisms of OAuth 2.0.
 
