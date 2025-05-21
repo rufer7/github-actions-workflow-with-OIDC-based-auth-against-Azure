@@ -69,12 +69,12 @@ In this step you'll configure OIDC in your Azure tenant.
 ### :keyboard: Activity: Configure OIDC in Azure
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab
-1. [Create a Microsoft Entra application with a service principal]([https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-an-azure-active-directory-application-and-service-principal](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure-openid-connect?WT.mc_id=MVP_344197#prerequisites)) by following the steps under Option 1
+1. [Create a Microsoft Entra application with a service principal](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure-openid-connect?WT.mc_id=MVP_344197#prerequisites) by following the steps under Option 1
     - Assign role `Contributor` with scope subscription (on subscription level) to the application (for a detailed step-by-step manual, see [here](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal?tabs=delegate-condition#step-1-identify-the-needed-scope))
-1. [Add federated credentials]([https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#add-federated-credentials](https://learn.microsoft.com/en-us/entra/workload-id/workload-identity-federation-create-trust?pivots=identity-wif-apps-methods-azp#github-actions)) by following the steps under the link
+1. [Add federated credentials](https://learn.microsoft.com/en-us/entra/workload-id/workload-identity-federation-create-trust?pivots=identity-wif-apps-methods-azp#github-actions) by following the steps under the link
     - `Entity type`: `Branch`
     - GitHub branch name: `deploy-resource-group`
-1. [Create GitHub secrets]([https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure?tabs=azure-portal%2Cwindows#create-github-secrets](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure-openid-connect?WT.mc_id=MVP_344197#create-github-secrets)) by following the steps under the link
+1. [Create GitHub secrets](https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure-openid-connect?WT.mc_id=MVP_344197#create-github-secrets) by following the steps under the link
 1. If you are done, create a new branch with name `deploy-resource-group`
 1. Wait about 20 seconds then refresh this page for the next step
 
